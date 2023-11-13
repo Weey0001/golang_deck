@@ -45,3 +45,33 @@ _create a functions:
 func <name>() <type>{
   return <value_same_type>
 }
+
+
+<< Arrays and Slices >>
+
+_Arrays // primitice data structure with fixed lengh list or records
+_Slice // Same as Arrays but plus more features but can grow or strink
+
+both need to be with same data records
+
+<< types >>
+
+_for initialize a type in go 
+
+type <name> <type>
+
+_for adding methodes to this type 
+
+func (<newinstancename> <typename>) <func_name> {}
+
+ex: 
+
+type deck []string
+
+func (d deck) print(){
+
+  for i, card:= range d {
+      fmt.Println(i,card)
+  }
+
+}
