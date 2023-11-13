@@ -1,0 +1,47 @@
+golang cours motherFuckerrrssss 
+
+_all golang file
+
+package main
+
+import "fmt"
+
+func main(){
+  fmt.Println("hi here")
+}
+
+_for running code in the project;
+
+go run <name>.go
+
+_some go command:
+
+go build
+//create executable file 
+
+_for executing the executable file:
+./<name>
+
+go run  //compile and execute a programm
+
+*for packages
+
+go install
+go get 
+
+<< all executable package are named "main" >>
+
+_using funcion from other files 
+
+_assing a variable
+
+var card string = "Ace of Spades"
+//or
+card := "Ace for Spades" // initialisations
+card = "Five of Diamonds"
+
+_create a functions:
+
+func <name>() <type>{
+  return <value_same_type>
+}
