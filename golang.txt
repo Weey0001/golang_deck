@@ -167,5 +167,25 @@ import "time"
 func Now()
 __.UnixNano() => return int64
 
+>>>>Testing
 
-_for getting more accurate methode of randomize
+for testing in go, we have to create a file with the testing name 
+
+deck.go => deck_test.go
+
+ex of testing file
+
+import "testing"
+
+func TestNewDeck ( t *testing.T ) {
+  d := newDeck()
+
+  if len(d) != 20 {
+    t.Error("Expected deck length of 20, but got", len(d))
+  }
+  }
+}
+
+_for runnint test 
+
+go test
