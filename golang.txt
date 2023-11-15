@@ -75,3 +75,45 @@ func (d deck) print(){
   }
 
 }
+
+_in the exercices we try to create a function deal
+_this function deal is the application will use for deal cards
+
+_we can use some methode of SLICE for interact with the value of the slice
+
+ex:
+
+fruit:= []string{"apple","banana","grape","orange"}
+
+fruit[up_Index_Include: up_To_Not_Include]
+
+fruit[0:2] // "apple","banana"
+fruit[2:] // "grape","orange"
+
+_methode to return 2 values
+
+func deal( d deck, handsize int) (deck,deck)[
+  return d[:handSize] d[handSize:]
+}
+
+_save file into the machine
+
+func WriteFile ( filename string, data []byte , perm os.FileMode) error
+
+_learning of []byte
+
+// remaining of a string
+
+ex:
+
+"Hi there" // string
+
+[72 105 32 116 104 101 114 101 33] byte slicem
+
+_type conversion 
+
+[]byte("hi there")
+
+_join slice of string 
+
+func Join ( s []string, sep string ) string
