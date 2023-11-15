@@ -117,3 +117,55 @@ _type conversion
 _join slice of string 
 
 func Join ( s []string, sep string ) string
+
+_to save file in the machine 
+
+import "io/ioutil"
+
+func WriteFile(filename string, data []byte, perm os.FilelMode) error
+
+_to read file from machine 
+
+func ReadFile( filename string)([]byte,error)
+
+_for use random math
+
+func Intn ( n int ) int
+
+_for swap element in the Slice :
+ 
+<slice>[index1],<slice>[index2] = <slice>[index2],<slice>[index1]
+
+_for randomise
+
+import "math/rand"
+
+func Intn() int
+
+_for accurate random methode
+
+import "math/rand"
+
+//use the Rand struc
+
+type Rand struct {
+  //contains filtered ot unexported fields
+}
+
+_use methode
+
+func New ( src Source ) *Rand
+
+_creating Source
+
+func NewSource( seed int64) Source
+
+for trick for the int64 you can use the time package 
+
+import "time"
+
+func Now()
+__.UnixNano() => return int64
+
+
+_for getting more accurate methode of randomize
